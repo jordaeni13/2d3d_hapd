@@ -13,8 +13,14 @@ struct GalleryView: View {
         VStack{
             Text("This is Gallery")
             Text("You are viewing \(viewPictureNum) picture")
-            
+                .padding(.bottom)
+            Image("picture\(viewPictureNum)")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                
+                
         }
+        .frame(maxHeight: 700)
     }
 }
 

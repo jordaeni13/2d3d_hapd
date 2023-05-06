@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isCameraView = false
     @State private var viewPictureNum = 0
+    let imageCount = 4
     var body: some View {
         VStack {
             if isCameraView {
@@ -30,9 +31,9 @@ struct ContentView: View {
                                 self.isCameraView.toggle()
                             } else {
                                 if !isCameraView{
-                                    if value.translation.width > 0{
+                                    if (value.translation.width > 0 && (imageCount-1)>(viewPictureNum)) {
                                         viewPictureNum+=1
-                                    } else {
+                                    } else if (value.translation.width < 0 && viewPictureNum>0){
                                         viewPictureNum-=1
                                     }
                                     
