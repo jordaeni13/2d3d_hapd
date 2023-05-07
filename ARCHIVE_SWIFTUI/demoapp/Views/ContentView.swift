@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var isCameraView = false
     @State private var viewPictureNum = 0
     let imageCount = 4
+    //UserDefaults.standard.set("hello", forKey: "imageCount")
     var body: some View {
         VStack {
             if isCameraView {
