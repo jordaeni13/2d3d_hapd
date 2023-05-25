@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PLR-tc-bsB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PLR-tc-bsB">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,21 +24,21 @@
                                         <rect key="frame" x="0.0" y="-155" width="393" height="451"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Niu-Oc-nfu" customClass="CustomView" customModule="HowToUIKit" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Niu-Oc-nfu" customClass="CustomView" customModule="HowToUIKit" customModuleProvider="target">
                                         <rect key="frame" x="16" y="20" width="361" height="350"/>
                                         <subviews>
-                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bN-yN-1M1" customClass="CustomBlurView" customModule="HowToUIKit" customModuleProvider="target">
+                                            <visualEffectView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bN-yN-1M1" customClass="CustomBlurView" customModule="HowToUIKit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="350"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YhS-j1-ufN">
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="YhS-j1-ufN">
                                                     <rect key="frame" x="0.0" y="0.0" width="361" height="350"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="WpR-eF-Jc3">
                                                             <rect key="frame" x="0.0" y="0.0" width="361" height="217"/>
                                                         </imageView>
-                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-dL-ezY">
+                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-dL-ezY">
                                                             <rect key="frame" x="0.0" y="217" width="361" height="133"/>
-                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qsI-tW-nqy">
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="qsI-tW-nqy">
                                                                 <rect key="frame" x="0.0" y="0.0" width="361" height="133"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
@@ -77,7 +78,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <vibrancyEffect>
-                                                                <blurEffect style="systemMaterial"/>
+                                                                <blurEffect style="systemMaterialLight"/>
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                     </subviews>
@@ -94,7 +95,7 @@
                                                         <constraint firstItem="Dfi-dL-ezY" firstAttribute="leading" secondItem="YhS-j1-ufN" secondAttribute="leading" id="ra1-U6-x9K"/>
                                                     </constraints>
                                                 </view>
-                                                <blurEffect style="regular"/>
+                                                <blurEffect style="systemThinMaterial"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="30"/>
@@ -106,7 +107,7 @@
                                         <constraints>
                                             <constraint firstItem="5bN-yN-1M1" firstAttribute="top" secondItem="Niu-Oc-nfu" secondAttribute="top" id="5Jc-kc-QK1"/>
                                             <constraint firstItem="5bN-yN-1M1" firstAttribute="leading" secondItem="Niu-Oc-nfu" secondAttribute="leading" id="BdT-oz-fXF"/>
-                                            <constraint firstAttribute="height" constant="350" id="CdR-Sw-7N4"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="CdR-Sw-7N4"/>
                                             <constraint firstAttribute="bottom" secondItem="5bN-yN-1M1" secondAttribute="bottom" id="GbV-RQ-Gye"/>
                                             <constraint firstItem="5bN-yN-1M1" firstAttribute="leading" secondItem="Niu-Oc-nfu" secondAttribute="leading" id="J3Y-bJ-URP"/>
                                             <constraint firstItem="5bN-yN-1M1" firstAttribute="top" secondItem="Niu-Oc-nfu" secondAttribute="top" id="Pdb-5S-2Tl"/>
