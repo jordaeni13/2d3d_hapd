@@ -43,7 +43,7 @@ struct GalleryView: View {
                             )
                     }
 
-            Text("RGB Value: \(Int(colorRGB.red * 255)), \(Int(colorRGB.green * 255)), \(Int(colorRGB.blue * 255))")
+            Text("Intensity: \(pow((Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3), 2))")
                 .padding()
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
     }
