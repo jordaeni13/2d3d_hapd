@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CameraView: View {
-    
     @State private var tapCount = 0
+    @StateObject var camera = CameraModel()
+
     var body: some View {
         ZStack {
             Color.black
@@ -17,24 +18,31 @@ struct CameraView: View {
         }
         VStack {
             Spacer()
-            
-            HStack{
-                Button(action: {}, label: {
-                    ZStack{
-                        Circle()
-                            .fill(Color.white)
-                            .frame(width: 65, height: 65)
-                        Circle()
-                            .stroke(Color.white, lineWidth: 2)
-                            .frame(width: 75, height: 75)
-                    }
-                })
+
+            HStack {
+                if camera.isTaken {
+                    Button(action: {}, label: {
+                        Text("Save")
+                            .foregroundColor(.black)
+                            .fontWeight(.semibold)
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 20)
+                            .background(Color.white)
+                            .clipShape(Capsule())
+                    })
+
+                    Spacer()
+                } else {
+                    
+                }
             }
+            .frame(height: 75)
         }
     }
 }
 
-class CameraModel: ObservedObject{
+
+class CameraModel: ObservableObject{
     @Published var isTaken = false
 }
 

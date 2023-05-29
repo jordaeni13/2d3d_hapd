@@ -16,13 +16,10 @@ struct GalleryView: View {
 
     var body: some View {
         VStack {
-            Text("This is Gallery")
-            Text("You are viewing \(viewPictureNum) picture")
+            Text("Gallery")
+            Text("You are viewing picture \(viewPictureNum) ")
 
-            Circle()
-                .fill(Color(red: colorRGB.red, green: colorRGB.green, blue: colorRGB.blue))
-                .frame(width: 100, height: 100)
-                .padding()
+            
 
             GeometryReader { geometry in
                         Image("picture\(viewPictureNum)")
