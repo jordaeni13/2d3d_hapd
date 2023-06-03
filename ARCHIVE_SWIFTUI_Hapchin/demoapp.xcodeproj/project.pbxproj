@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B14B652A25ABAB00451325 /* MiDaSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B5F2A25ABAB00451325 /* MiDaSHandler.swift */; };
+		58B14B662A25ABAB00451325 /* model_opt.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 58B14B602A25ABAB00451325 /* model_opt.tflite */; };
+		58B14B672A25ABAB00451325 /* demoappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B612A25ABAB00451325 /* demoappApp.swift */; };
+		58B14B682A25ABAB00451325 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B622A25ABAB00451325 /* Constants.swift */; };
+		58B14B692A25ABAB00451325 /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B14B632A25ABAB00451325 /* example.png */; };
+		58B14B7D2A25B03100451325 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B7A2A25B03100451325 /* CGSizeExtension.swift */; };
+		58B14B7E2A25B03100451325 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B7B2A25B03100451325 /* CVPixelBufferExtension.swift */; };
+		58B14B7F2A25B03100451325 /* TFLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B7C2A25B03100451325 /* TFLiteExtension.swift */; };
 		854C374B2A06739C00B2DAEB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C374A2A06739C00B2DAEB /* CameraView.swift */; };
 		854C374D2A0673CB00B2DAEB /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C374C2A0673CB00B2DAEB /* GalleryView.swift */; };
-		85C0D2462A06685B009E8F66 /* demoappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0D2452A06685B009E8F66 /* demoappApp.swift */; };
 		85C0D2482A06685B009E8F66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0D2472A06685B009E8F66 /* ContentView.swift */; };
 		85C0D24A2A06685D009E8F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C0D2492A06685D009E8F66 /* Assets.xcassets */; };
 		85C0D24D2A06685D009E8F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C0D24C2A06685D009E8F66 /* Preview Assets.xcassets */; };
@@ -18,11 +25,18 @@
 
 /* Begin PBXFileReference section */
 		5081535658014AD5CA96BA1C /* Pods-demoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoapp.release.xcconfig"; path = "Target Support Files/Pods-demoapp/Pods-demoapp.release.xcconfig"; sourceTree = "<group>"; };
+		58B14B5F2A25ABAB00451325 /* MiDaSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiDaSHandler.swift; sourceTree = "<group>"; };
+		58B14B602A25ABAB00451325 /* model_opt.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_opt.tflite; sourceTree = "<group>"; };
+		58B14B612A25ABAB00451325 /* demoappApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demoappApp.swift; sourceTree = "<group>"; };
+		58B14B622A25ABAB00451325 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		58B14B632A25ABAB00451325 /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		58B14B7A2A25B03100451325 /* CGSizeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeExtension.swift; sourceTree = "<group>"; };
+		58B14B7B2A25B03100451325 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		58B14B7C2A25B03100451325 /* TFLiteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLiteExtension.swift; sourceTree = "<group>"; };
 		851125B82A2247320012966B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		854C374A2A06739C00B2DAEB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		854C374C2A0673CB00B2DAEB /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		85C0D2422A06685B009E8F66 /* demoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		85C0D2452A06685B009E8F66 /* demoappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoappApp.swift; sourceTree = "<group>"; };
 		85C0D2472A06685B009E8F66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		85C0D2492A06685D009E8F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85C0D24C2A06685D009E8F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,7 +62,6 @@
 				F9EF6959F67503EA3B5A8360 /* Pods-demoapp.debug.xcconfig */,
 				5081535658014AD5CA96BA1C /* Pods-demoapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,16 @@
 				BF50AED8DE9BE3A150A5FE34 /* Pods_demoapp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58B14B792A25B03100451325 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58B14B7A2A25B03100451325 /* CGSizeExtension.swift */,
+				58B14B7B2A25B03100451325 /* CVPixelBufferExtension.swift */,
+				58B14B7C2A25B03100451325 /* TFLiteExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		854C37492A06737C00B2DAEB /* Views */ = {
@@ -91,9 +114,14 @@
 		85C0D2442A06685B009E8F66 /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
+				58B14B792A25B03100451325 /* Extensions */,
+				58B14B622A25ABAB00451325 /* Constants.swift */,
+				58B14B612A25ABAB00451325 /* demoappApp.swift */,
+				58B14B632A25ABAB00451325 /* example.png */,
+				58B14B5F2A25ABAB00451325 /* MiDaSHandler.swift */,
+				58B14B602A25ABAB00451325 /* model_opt.tflite */,
 				851125B82A2247320012966B /* Info.plist */,
 				854C37492A06737C00B2DAEB /* Views */,
-				85C0D2452A06685B009E8F66 /* demoappApp.swift */,
 				85C0D2492A06685D009E8F66 /* Assets.xcassets */,
 				85C0D24B2A06685D009E8F66 /* Preview Content */,
 			);
@@ -167,6 +195,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B14B692A25ABAB00451325 /* example.png in Resources */,
+				58B14B662A25ABAB00451325 /* model_opt.tflite in Resources */,
 				85C0D24D2A06685D009E8F66 /* Preview Assets.xcassets in Resources */,
 				85C0D24A2A06685D009E8F66 /* Assets.xcassets in Resources */,
 			);
@@ -205,9 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				854C374B2A06739C00B2DAEB /* CameraView.swift in Sources */,
+				58B14B7E2A25B03100451325 /* CVPixelBufferExtension.swift in Sources */,
 				85C0D2482A06685B009E8F66 /* ContentView.swift in Sources */,
-				85C0D2462A06685B009E8F66 /* demoappApp.swift in Sources */,
+				58B14B7F2A25B03100451325 /* TFLiteExtension.swift in Sources */,
+				58B14B7D2A25B03100451325 /* CGSizeExtension.swift in Sources */,
+				58B14B672A25ABAB00451325 /* demoappApp.swift in Sources */,
+				58B14B682A25ABAB00451325 /* Constants.swift in Sources */,
 				854C374D2A0673CB00B2DAEB /* GalleryView.swift in Sources */,
+				58B14B652A25ABAB00451325 /* MiDaSHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +377,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = demoapp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +417,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = demoapp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
