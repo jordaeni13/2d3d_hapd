@@ -19,37 +19,51 @@ import Combine
 
 class Camera: NSObject, ObservableObject {
     var session = AVCaptureSession()
-    var videoDeviceInput: AVCaptureDeviceInput!
-    let output = AVCapturePhotoOutput()
-    var photoData = Data(count: 0)
-    
-
-    @Published var recentImage: UIImage?
-    @Published var capturedPhotos: [UIImage] = []
-
-    
-    // 카메라 셋업 과정을 담당하는 함수,
+        var videoDeviceInput: AVCaptureDeviceInput!
+        let output = AVCapturePhotoOutput()
+        var photoData = Data(count: 0)
+        
+        @Published var recentImage: UIImage?
+        @Published var capturedPhotos: [UIImage] = []
+        
     func setUpCamera() {
-        if let device = AVCaptureDevice.default(.builtInWideAngleCamera,
-                                                for: .video, position: .back) {
-            do { // 카메라가 사용 가능하면 세션에 input과 output을 연결
-                videoDeviceInput = try AVCaptureDeviceInput(device: device)
-                if session.canAddInput(videoDeviceInput) {
-                    session.addInput(videoDeviceInput)
+            if let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
+                do {
+                    videoDeviceInput = try AVCaptureDeviceInput(device: device)
+                    if session.canAddInput(videoDeviceInput) {
+                        session.addInput(videoDeviceInput)
+                    }
+                    
+                    if session.canAddOutput(output) {
+                        session.addOutput(output)
+                        
+                        // Set the desired photo aspect ratio to 4:3
+                        let desiredWidth: Int32 = 1920
+                        let desiredHeight: Int32 = 1440
+                        var selectedFormat: AVCaptureDevice.Format?
+                        
+                        for format in device.formats {
+                            let formatDescription = format.formatDescription
+                            let dimensions = CMVideoFormatDescriptionGetDimensions(formatDescription)
+                            if dimensions.width == desiredWidth && dimensions.height == desiredHeight {
+                                selectedFormat = format
+                                break
+                            }
+                        }
+                        
+                        if let format = selectedFormat {
+                            try device.lockForConfiguration()
+                            device.activeFormat = format
+                            device.unlockForConfiguration()
+                        }
+                    }
+                    
+                    session.startRunning()
+                } catch {
+                    print(error)
                 }
-                
-                if session.canAddOutput(output) {
-                    session.addOutput(output)
-                    output.maxPhotoDimensions = CMVideoDimensions(width: 1920, height: 1080)
-
-                    output.maxPhotoQualityPrioritization = .quality
-                }
-                session.startRunning() // 세션 시작
-            } catch {
-                print(error) // 에러 프린트
             }
         }
-    }
     
     func requestAndCheckPermissions() {
         // 카메라 권한 상태 확인
@@ -87,6 +101,7 @@ class Camera: NSObject, ObservableObject {
         guard let image = UIImage(data: imageData) else { return }
         
 
+        UIImageWriteToSavedPhotosAlbum(getMidasImage(on: image), nil, nil, nil)
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         
         

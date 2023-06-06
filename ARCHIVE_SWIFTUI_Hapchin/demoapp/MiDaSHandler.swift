@@ -57,11 +57,11 @@ func getMidasImage(on inimage: UIImage) -> UIImage {
     let sourceRect: CGRect
     let image: UIImage
     modelHandler = ModelDataHandler()
-    InputImage = loadImageAsPixelBuffer(on: fixOrientation(img: inimage)) ?? 0 as! CVPixelBuffer
+    InputImage = convertPixelFormat(of: loadImageAsPixelBuffer(on: fixOrientation(img: inimage)) ?? 0 as! CVPixelBuffer)
     //InputImage = convertPixelFormat(of: loadImageFromPathAsPixelBuffer(from: Bundle.main.path(forResource: "example", ofType: "jpeg") ?? "") ?? 0 as! CVPixelBuffer)
     sourceRect = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(InputImage ?? 0 as! CVPixelBuffer) , height: CVPixelBufferGetHeight(InputImage ?? 0 as! CVPixelBuffer) )
     let (pixel, width, height) = modelHandler.runMidas(on: InputImage ?? 0 as! CVPixelBuffer , from: sourceRect) ?? ([],0,0)
-    image = resizeImage(image: UIImage(pixels: pixel, width: width, height: height) ?? defaultimg, newWidth: sourceRect.size.width, newHeight: sourceRect.size.height) ?? defaultimg
+    image = resizeImage(image: UIImage(pixels: pixel, width: width, height: height) ?? defaultimg, newWidth: CGFloat(width), newHeight: CGFloat(height)/sourceRect.size.width*sourceRect.size.height) ?? defaultimg
     
     return image
 }
@@ -131,7 +131,7 @@ func loadImageAsPixelBuffer(on image: UIImage) -> CVPixelBuffer? {
         kCFAllocatorDefault,
         Int(image.size.width),
         Int(image.size.height),
-        kCVPixelFormatType_32BGRA,
+        kCVPixelFormatType_32ARGB,
         options as CFDictionary,
         &pixelBuffer
     )
