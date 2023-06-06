@@ -57,11 +57,11 @@ func getMidasImage(on inimage: UIImage) -> UIImage {
     let sourceRect: CGRect
     let image: UIImage
     modelHandler = ModelDataHandler()
-    InputImage = convertPixelFormat(of: loadImageAsPixelBuffer(on: inimage) ?? 0 as! CVPixelBuffer)
+    InputImage = loadImageAsPixelBuffer(on: fixOrientation(img: inimage)) ?? 0 as! CVPixelBuffer
     //InputImage = convertPixelFormat(of: loadImageFromPathAsPixelBuffer(from: Bundle.main.path(forResource: "example", ofType: "jpeg") ?? "") ?? 0 as! CVPixelBuffer)
     sourceRect = CGRect(x: 0, y: 0, width: CVPixelBufferGetWidth(InputImage ?? 0 as! CVPixelBuffer) , height: CVPixelBufferGetHeight(InputImage ?? 0 as! CVPixelBuffer) )
     let (pixel, width, height) = modelHandler.runMidas(on: InputImage ?? 0 as! CVPixelBuffer , from: sourceRect) ?? ([],0,0)
-    image = resizeImage(image: UIImage(pixels: pixel, width: width, height: height) ?? defaultimg,newWidth: CGFloat(width), newHeight: CGFloat(height)/sourceRect.size.width*sourceRect.size.height) ?? defaultimg
+    image = resizeImage(image: UIImage(pixels: pixel, width: width, height: height) ?? defaultimg, newWidth: sourceRect.size.width, newHeight: sourceRect.size.height) ?? defaultimg
     
     return image
 }
@@ -109,6 +109,18 @@ func loadImageFromPathAsPixelBuffer(from imagePath: String) -> CVPixelBuffer? {
 }
 */
 
+func fixOrientation(img: UIImage) -> UIImage {
+  if (img.imageOrientation == .up) {
+    return img
+  }
+  UIGraphicsBeginImageContextWithOptions(img.size, false, img.scale)
+  let rect = CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height)
+  img.draw(in: rect)
+  let normalizedImage = UIGraphicsGetImageFromCurrentImageContext()!
+  UIGraphicsEndImageContext()
+  return normalizedImage
+}
+
 func loadImageAsPixelBuffer(on image: UIImage) -> CVPixelBuffer? {
     let options: [String: Any] = [
         kCVPixelBufferCGImageCompatibilityKey as String: true,
@@ -119,7 +131,7 @@ func loadImageAsPixelBuffer(on image: UIImage) -> CVPixelBuffer? {
         kCFAllocatorDefault,
         Int(image.size.width),
         Int(image.size.height),
-        kCVPixelFormatType_32ARGB,
+        kCVPixelFormatType_32BGRA,
         options as CFDictionary,
         &pixelBuffer
     )

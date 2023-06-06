@@ -86,10 +86,8 @@ class Camera: NSObject, ObservableObject {
     func savePhoto(_ imageData: Data) {
         guard let image = UIImage(data: imageData) else { return }
         
-       
-        
-        
-        UIImageWriteToSavedPhotosAlbum(getMidasImage(on: image), nil, nil, nil)
+
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         
         
         print(capturedPhotos)
@@ -126,39 +124,27 @@ struct CameraView: View {
 
     var body: some View {
         ZStack {
-            viewModel.cameraPreview.ignoresSafeArea()
+            viewModel.cameraPreview
+                .ignoresSafeArea()
                 .onAppear {
                     viewModel.configure()
                 }
             
+            if let previewImage = viewModel.recentImage {
+                Image(uiImage: previewImage)
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all)
+            }
+            
             VStack {
-                
-                
                 Spacer()
                 
-                HStack{
-                    // 찍은 사진 미리보기
-                    Button(action: {}) {
-                        if let previewImage = viewModel.recentImage {
-                            Image(uiImage: previewImage)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 75, height: 75)
-                                .clipShape(RoundedRectangle(cornerRadius: 15))
-                                .aspectRatio(1, contentMode: .fit)
-                        } else {
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(lineWidth: 3)
-                                .foregroundColor(.white)
-                                .frame(width: 75, height: 75)
-                        }
-                    }
-                    .padding()
-                    
+                HStack {
                     Spacer()
                     
                     // 사진찍기 버튼
-                    Button(action: {viewModel.capturePhoto()}) {
+                    Button(action: { viewModel.capturePhoto() }) {
                         Circle()
                             .stroke(lineWidth: 5)
                             .frame(width: 75, height: 75)
@@ -168,12 +154,13 @@ struct CameraView: View {
                     Spacer()
                     
                     // 전후면 카메라 교체
-                   
+                    
                 }
             }
             .foregroundColor(.white)
         }
     }
+
 }
 
 

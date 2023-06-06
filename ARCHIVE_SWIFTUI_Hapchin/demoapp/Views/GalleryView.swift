@@ -17,13 +17,11 @@ struct ContentView: View {
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State private var showSelectPhotoText = true
+    
        
     var body: some View {
         NavigationView {
             VStack {
-                
-                
-
                 ZStack {
                     if let selectedImageData,
                        let uiImage = UIImage(data: selectedImageData) {
@@ -47,10 +45,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                
-                
-                    
-                    
                     
                     VStack {
                         Spacer()
