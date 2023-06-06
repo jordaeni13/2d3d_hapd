@@ -1,14 +1,10 @@
-//
-//  GalleryView.swift
-//  demoapp
-//
-//  Created by Iron Bae on 2023/05/06.
-//
+
 import SwiftUI
 import CoreHaptics
 import PhotosUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) var colorScheme
     @GestureState private var dragLocation: CGPoint = .zero
     @State private var colorRGB: (red: CGFloat, green: CGFloat, blue: CGFloat) = (0, 0, 0)
     let hapticManager = HapticManager()
@@ -43,52 +39,78 @@ struct ContentView: View {
                         }
                     }
                     
-                    
-                }.navigationBarTitle("HapD")
-                
-                VStack {
-                    Spacer()
-                    
-                    HStack {
-                        Button(action: {
-                            // Perform action when the button is tapped
-                        }) {
-                            PhotosPicker(
-                                selection: $selectedItem,
-                                matching: .images,
-                                photoLibrary: .shared()
-                            ) {
-                                Image(systemName: "photo")
-                                    .font(.title)
-                                    .foregroundColor(.black)
-                            }
-                            .onChange(of: selectedItem) { newItem in
-                                Task {
-                                    // Retrieve selected asset in the form of Data
-                                    if let data = try? await newItem?.loadTransferable(type: Data.self) {
-                                        selectedImageData = data
+                    VStack {
+                        Spacer()
+                        
+                        HStack {
+                            Button(action: {
+                                // Perform action when the button is tapped
+                            }) {
+                                PhotosPicker(
+                                    selection: $selectedItem,
+                                    matching: .images,
+                                    photoLibrary: .shared()
+                                ) {
+                                    if colorScheme == .dark {
+                                        Image(systemName: "photo")
+                                            .font(.title)
+                                            .foregroundColor(.white)
+                                    
+                                                } else {
+                                                    Image(systemName: "photo")
+                                                        .font(.title)
+                                                        .foregroundColor(.black)
+                                                        
+                                                }
+                                }
+                                .onChange(of: selectedItem) { newItem in
+                                    Task {
+                                        // Retrieve selected asset in the form of Data
+                                        if let data = try? await newItem?.loadTransferable(type: Data.self) {
+                                            selectedImageData = data
+                                        }
                                     }
                                 }
                             }
+                            Spacer()
+                            Text("Intensity: \(pow((Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3), 2))")
+                                .padding()
+                            
+                            Spacer()
+                            
+                            NavigationLink(destination: CameraView()) {
+                                if colorScheme == .dark {
+                                    Image(systemName: "camera")
+                                        .font(.title)
+                                        .foregroundColor(.white)
+                                        
+                                        .padding(.trailing)
+                                
+                                        } else {
+                                                Image(systemName: "camera")
+                                                    .font(.title)
+                                                    .foregroundColor(.black)
+                                                    
+                                                    .padding(.trailing)
+                                                    
+                                            }
+                            }
                         }
-                        Spacer()
-                        Text("Intensity: \(pow((Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3), 2))")
-                            .padding()
-                        
-                        Spacer()
-                        
-                        NavigationLink(destination: CameraView()) {
-                            Image(systemName: "camera")
-                                .font(.title)
-                                .foregroundColor(.black)
-                                .padding(.trailing)
-                        }
+                       
                     }
+                    .padding()
+                    
+                    
                 }
-                .padding()
+                .padding(.bottom)
+                .navigationBarTitle("HapD")
+                
+                
             }
+            .ignoresSafeArea()
         }
     }
+
     
     private func updateColorRGB(state: CGPoint, imageFrame: CGRect) {
         DispatchQueue.main.async {

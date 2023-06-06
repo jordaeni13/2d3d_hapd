@@ -1,23 +1,16 @@
-//
-//  CameraView.swift
-//  demoapp
-//
-//  Created by Iron Bae on 2023/05/06.
-//
-
-//
-//  CameraView.swift
-//  SwiftUI_JJaseCam
-//
-//  Created by 이영빈 on 2021/09/22.
-//
 
 import SwiftUI
 import AVFoundation
 import Combine
 
+class PhotoStore: ObservableObject {
+    @Published var capturedPhotos: [UIImage] = []
+}
+
 
 class Camera: NSObject, ObservableObject {
+    
+    
     var session = AVCaptureSession()
         var videoDeviceInput: AVCaptureDeviceInput!
         let output = AVCapturePhotoOutput()
@@ -122,10 +115,13 @@ extension Camera: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didCapturePhotoFor resolvedSettings: AVCaptureResolvedPhotoSettings) {
     }
     
+    
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         guard let imageData = photo.fileDataRepresentation() else { return }
         self.recentImage = UIImage(data: imageData)
         self.savePhoto(imageData)
+        
+        
         
         
         print("[CameraModel]: Capture routine's done")
