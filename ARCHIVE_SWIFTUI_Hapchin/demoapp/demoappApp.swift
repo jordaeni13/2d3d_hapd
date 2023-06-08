@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct demoappApp: App {
-    var body: some Scene {
+    @StateObject private var camera = Camera()
+    var body: some Scene { 
         WindowGroup {
             ContentView()
+                .environmentObject(camera)
         }
     }
 }

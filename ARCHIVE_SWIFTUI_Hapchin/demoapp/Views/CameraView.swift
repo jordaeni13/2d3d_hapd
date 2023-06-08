@@ -3,21 +3,15 @@ import SwiftUI
 import AVFoundation
 import Combine
 
-class PhotoStore: ObservableObject {
-    @Published var capturedPhotos: [UIImage] = []
-}
-
-
 class Camera: NSObject, ObservableObject {
     
     
     var session = AVCaptureSession()
         var videoDeviceInput: AVCaptureDeviceInput!
         let output = AVCapturePhotoOutput()
-        var photoData = Data(count: 0)
         
         @Published var recentImage: UIImage?
-        @Published var capturedPhotos: [UIImage] = []
+    
         
     func setUpCamera() {
             if let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
@@ -98,7 +92,6 @@ class Camera: NSObject, ObservableObject {
         UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         
         
-        print(capturedPhotos)
         // 사진 저장하기
         print("[Camera]: Photo's saved")
     }
@@ -134,43 +127,40 @@ struct CameraView: View {
 
 
     var body: some View {
-        ZStack {
-            viewModel.cameraPreview
-                .ignoresSafeArea()
-                .onAppear {
-                    viewModel.configure()
-                }
-            
-            if let previewImage = viewModel.recentImage {
-                Image(uiImage: previewImage)
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-            }
-            
-            VStack {
-                Spacer()
-                
-                HStack {
-                    Spacer()
-                    
-                    // 사진찍기 버튼
-                    Button(action: { viewModel.capturePhoto() }) {
-                        Circle()
-                            .stroke(lineWidth: 5)
-                            .frame(width: 75, height: 75)
-                            .padding()
+            ZStack {
+                viewModel.cameraPreview.ignoresSafeArea()
+                    .onAppear {
+                        viewModel.configure()
                     }
+                
+                VStack {
+                    
                     
                     Spacer()
                     
-                    // 전후면 카메라 교체
-                    
+                    HStack{
+                        // 찍은 사진 미리보기
+                        
+                        
+                        Spacer()
+                        
+                        // 사진찍기 버튼
+                        Button(action: {viewModel.capturePhoto()}) {
+                            Circle()
+                                .stroke(lineWidth: 5)
+                                .frame(width: 75, height: 75)
+                                .padding()
+                        }
+                        
+                        Spacer()
+                        
+                        // 전후면 카메라 교체
+                       
+                    }
                 }
+                .foregroundColor(.white)
             }
-            .foregroundColor(.white)
         }
-    }
 
 }
 
