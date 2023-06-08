@@ -1,0 +1,406 @@
+
+.DS_Store
+ARCHIVE_SWIFTUI_Hapchin/demoapp.xcworkspace/xcuserdata/ironbae.xcuserdatad/UserInterfaceState.xcuserstate
+ios/.DS_Store
+ios/LICENSE
+ios/Midas.xcodeproj/project.pbxproj
+ios/Midas.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ios/Midas.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/Midas.xcodeproj/project.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate
+ios/Midas.xcodeproj/project.xcworkspace/xcuserdata/ironbae.xcuserdatad/UserInterfaceState.xcuserstate
+ios/Midas.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/xcschememanagement.plist
+ios/Midas.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/xcschememanagement.plist
+ios/Midas.xcworkspace/contents.xcworkspacedata
+ios/Midas.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ios/Midas.xcworkspace/xcuserdata/ironbae.xcuserdatad/UserInterfaceState.xcuserstate
+ios/Midas/.DS_Store
+ios/Midas/AppDelegate.swift
+ios/Midas/Assets.xcassets/AppIcon.appiconset/100.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/1024.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/114.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/120.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/144.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/152.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/167.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/180.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/20.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/29.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/40.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/50.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/57.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/58.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/60.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/72.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/76.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/80.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/87.png
+ios/Midas/Assets.xcassets/AppIcon.appiconset/Contents.json
+ios/Midas/Assets.xcassets/Contents.json
+ios/Midas/Assets.xcassets/tfl_logo.png
+ios/Midas/Camera Feed/CameraFeedManager.swift
+ios/Midas/Camera Feed/PreviewView.swift
+ios/Midas/Cells/InfoCell.swift
+ios/Midas/Constants.swift
+ios/Midas/Extensions/CGSizeExtension.swift
+ios/Midas/Extensions/CVPixelBufferExtension.swift
+ios/Midas/Extensions/TFLiteExtension.swift
+ios/Midas/Model/model_opt.tflite
+ios/Midas/ModelDataHandler/ModelDataHandler.swift
+ios/Midas/Storyboards/Base.lproj/Launch Screen.storyboard
+ios/Midas/Storyboards/Base.lproj/Main.storyboard
+ios/Midas/ViewControllers/ViewController.swift
+ios/Podfile
+ios/Podfile.lock
+ios/Pods/.DS_Store
+ios/Pods/Manifest.lock
+ios/Pods/Pods.xcodeproj/project.pbxproj
+ios/Pods/Pods.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/Pods-Midas.xcscheme
+ios/Pods/Pods.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/TensorFlowLiteC.xcscheme
+ios/Pods/Pods.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/TensorFlowLiteSwift.xcscheme
+ios/Pods/Pods.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/xcschememanagement.plist
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas-acknowledgements.markdown
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas-acknowledgements.plist
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas-dummy.m
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas-Info.plist
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas-umbrella.h
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas.debug.xcconfig
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas.modulemap
+ios/Pods/Target Support Files/Pods-Midas/Pods-Midas.release.xcconfig
+ios/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks-input-files.xcfilelist
+ios/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks-output-files.xcfilelist
+ios/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks.sh
+ios/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC.debug.xcconfig
+ios/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC.release.xcconfig
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-dummy.m
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-umbrella.h
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.debug.xcconfig
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap
+ios/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.release.xcconfig
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/Info.plist
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/builtin_ops.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/c_api.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/c_api_experimental.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/c_api_types.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/common.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/profiler.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/registration_external.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/telemetry_setting.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/TensorFlowLiteC.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/types.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/xnnpack_delegate.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Modules/module.modulemap
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/TensorFlowLiteC
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/builtin_ops.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/c_api.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/c_api_experimental.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/c_api_types.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/common.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/profiler.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/registration_external.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/telemetry_setting.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/TensorFlowLiteC.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/types.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/xnnpack_delegate.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Modules/module.modulemap
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/TensorFlowLiteC
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/Info.plist
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/Headers/coreml_delegate.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/Headers/TensorFlowLiteCCoreML.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/Modules/module.modulemap
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/TensorFlowLiteCCoreML
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/Headers/coreml_delegate.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/Headers/TensorFlowLiteCCoreML.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/Modules/module.modulemap
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/TensorFlowLiteCCoreML
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/Info.plist
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/Headers/metal_delegate.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/Headers/TensorFlowLiteCMetal.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/Modules/module.modulemap
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/TensorFlowLiteCMetal
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/Headers/metal_delegate.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/Headers/TensorFlowLiteCMetal.h
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/Modules/module.modulemap
+ios/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/TensorFlowLiteCMetal
+ios/Pods/TensorFlowLiteSwift/LICENSE
+ios/Pods/TensorFlowLiteSwift/README.md
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/CoreMLDelegate.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Delegate.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Interpreter.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/InterpreterError.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/MetalDelegate.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Model.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/QuantizationParameters.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/SignatureRunner.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/SignatureRunnerError.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Tensor.swift
+ios/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/TensorFlowLite.swift
+ios/README.md
+ios/RunScripts/download_models.sh
+MiDaS-HapD/.DS_Store
+MiDaS-HapD/MiDaS-HapD.xcodeproj/project.pbxproj
+MiDaS-HapD/MiDaS-HapD.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+MiDaS-HapD/MiDaS-HapD.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+MiDaS-HapD/MiDaS-HapD.xcodeproj/project.xcworkspace/xcuserdata/woojun.xcuserdatad/UserInterfaceState.xcuserstate
+MiDaS-HapD/MiDaS-HapD.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-HapD/MiDaS-HapD.xcodeproj/xcuserdata/woojun.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-HapD/MiDaS-HapD.xcodeproj/xcuserdata/wooyoung.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-HapD/MiDaS-HapD.xcworkspace/contents.xcworkspacedata
+MiDaS-HapD/MiDaS-HapD.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+MiDaS-HapD/MiDaS-HapD.xcworkspace/xcuserdata/ironbae.xcuserdatad/UserInterfaceState.xcuserstate
+MiDaS-HapD/MiDaS-HapD.xcworkspace/xcuserdata/woojun.xcuserdatad/UserInterfaceState.xcuserstate
+MiDaS-HapD/MiDaS-HapD.xcworkspace/xcuserdata/woojun.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+MiDaS-HapD/MiDaS-HapD.xcworkspace/xcuserdata/wooyoung.xcuserdatad/UserInterfaceState.xcuserstate
+MiDaS-HapD/MiDaS-HapD/.DS_Store
+MiDaS-HapD/MiDaS-HapD/Assets.xcassets/.DS_Store
+MiDaS-HapD/MiDaS-HapD/Assets.xcassets/AccentColor.colorset/Contents.json
+MiDaS-HapD/MiDaS-HapD/Assets.xcassets/AppIcon.appiconset/Contents.json
+MiDaS-HapD/MiDaS-HapD/Assets.xcassets/Contents.json
+MiDaS-HapD/MiDaS-HapD/Constants.swift
+MiDaS-HapD/MiDaS-HapD/ContentView.swift
+MiDaS-HapD/MiDaS-HapD/Extensions/CGSizeExtension.swift
+MiDaS-HapD/MiDaS-HapD/Extensions/CVPixelBufferExtension.swift
+MiDaS-HapD/MiDaS-HapD/Extensions/TFLiteExtension.swift
+MiDaS-HapD/MiDaS-HapD/MiDaS_HapDApp.swift
+MiDaS-HapD/MiDaS-HapD/Model/model_opt.tflite
+MiDaS-HapD/MiDaS-HapD/model_opt.tflite
+MiDaS-HapD/MiDaS-HapD/Preview Content/Preview Assets.xcassets/Contents.json
+MiDaS-HapD/Podfile
+MiDaS-HapD/Podfile.lock
+MiDaS-HapD/Pods/.DS_Store
+MiDaS-HapD/Pods/Manifest.lock
+MiDaS-HapD/Pods/Pods.xcodeproj/project.pbxproj
+MiDaS-HapD/Pods/Pods.xcodeproj/xcuserdata/ironbae.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-HapD/Pods/Pods.xcodeproj/xcuserdata/woojun.xcuserdatad/xcschemes/Pods-MiDaS-HapD.xcscheme
+MiDaS-HapD/Pods/Pods.xcodeproj/xcuserdata/woojun.xcuserdatad/xcschemes/TensorFlowLiteC.xcscheme
+MiDaS-HapD/Pods/Pods.xcodeproj/xcuserdata/woojun.xcuserdatad/xcschemes/TensorFlowLiteSwift.xcscheme
+MiDaS-HapD/Pods/Pods.xcodeproj/xcuserdata/woojun.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-HapD/Pods/Pods.xcodeproj/xcuserdata/wooyoung.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD-acknowledgements.markdown
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD-acknowledgements.plist
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD-dummy.m
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD-Info.plist
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD-umbrella.h
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD.debug.xcconfig
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD.modulemap
+MiDaS-HapD/Pods/Target Support Files/Pods-MiDaS-HapD/Pods-MiDaS-HapD.release.xcconfig
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks-input-files.xcfilelist
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks-output-files.xcfilelist
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC-xcframeworks.sh
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC.debug.xcconfig
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteC/TensorFlowLiteC.release.xcconfig
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-dummy.m
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-Info.plist
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-prefix.pch
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift-umbrella.h
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.debug.xcconfig
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.modulemap
+MiDaS-HapD/Pods/Target Support Files/TensorFlowLiteSwift/TensorFlowLiteSwift.release.xcconfig
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/Info.plist
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/builtin_ops.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/c_api.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/c_api_experimental.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/c_api_types.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/common.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/profiler.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/registration_external.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/telemetry_setting.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/TensorFlowLiteC.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/types.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Headers/xnnpack_delegate.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/Modules/module.modulemap
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64/TensorFlowLiteC.framework/TensorFlowLiteC
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/builtin_ops.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/c_api.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/c_api_experimental.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/c_api_types.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/common.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/profiler.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/registration_external.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/telemetry_setting.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/TensorFlowLiteC.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/types.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Headers/xnnpack_delegate.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/Modules/module.modulemap
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteC.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteC.framework/TensorFlowLiteC
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/Info.plist
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/Headers/coreml_delegate.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/Headers/TensorFlowLiteCCoreML.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/Modules/module.modulemap
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64/TensorFlowLiteCCoreML.framework/TensorFlowLiteCCoreML
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/Headers/coreml_delegate.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/Headers/TensorFlowLiteCCoreML.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/Modules/module.modulemap
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCCoreML.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCCoreML.framework/TensorFlowLiteCCoreML
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/Info.plist
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/Headers/metal_delegate.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/Headers/TensorFlowLiteCMetal.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/Modules/module.modulemap
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64/TensorFlowLiteCMetal.framework/TensorFlowLiteCMetal
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/Headers/metal_delegate.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/Headers/TensorFlowLiteCMetal.h
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/Modules/module.modulemap
+MiDaS-HapD/Pods/TensorFlowLiteC/Frameworks/TensorFlowLiteCMetal.xcframework/ios-arm64_x86_64-simulator/TensorFlowLiteCMetal.framework/TensorFlowLiteCMetal
+MiDaS-HapD/Pods/TensorFlowLiteSwift/LICENSE
+MiDaS-HapD/Pods/TensorFlowLiteSwift/README.md
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/CoreMLDelegate.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Delegate.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Interpreter.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/InterpreterError.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/MetalDelegate.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Model.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/QuantizationParameters.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/SignatureRunner.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/SignatureRunnerError.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/Tensor.swift
+MiDaS-HapD/Pods/TensorFlowLiteSwift/tensorflow/lite/swift/Sources/TensorFlowLite.swift
+MiDaS-master/.DS_Store
+MiDaS-master/Dockerfile
+MiDaS-master/environment.yaml
+MiDaS-master/hubconf.py
+MiDaS-master/input/.DS_Store
+MiDaS-master/input/.placeholder
+MiDaS-master/LICENSE
+MiDaS-master/midas/backbones/beit.py
+MiDaS-master/midas/backbones/levit.py
+MiDaS-master/midas/backbones/next_vit.py
+MiDaS-master/midas/backbones/swin.py
+MiDaS-master/midas/backbones/swin2.py
+MiDaS-master/midas/backbones/swin_common.py
+MiDaS-master/midas/backbones/utils.py
+MiDaS-master/midas/backbones/vit.py
+MiDaS-master/midas/base_model.py
+MiDaS-master/midas/blocks.py
+MiDaS-master/midas/dpt_depth.py
+MiDaS-master/midas/midas_net.py
+MiDaS-master/midas/midas_net_custom.py
+MiDaS-master/midas/model_loader.py
+MiDaS-master/midas/transforms.py
+MiDaS-master/mobile/android/app/build.gradle
+MiDaS-master/mobile/android/app/proguard-rules.pro
+MiDaS-master/mobile/android/app/src/androidTest/assets/fox-mobilenet_v1_1.0_224_support.txt
+MiDaS-master/mobile/android/app/src/androidTest/assets/fox-mobilenet_v1_1.0_224_task_api.txt
+MiDaS-master/mobile/android/app/src/androidTest/java/AndroidManifest.xml
+MiDaS-master/mobile/android/app/src/androidTest/java/org/tensorflow/lite/examples/classification/ClassifierTest.java
+MiDaS-master/mobile/android/app/src/main/AndroidManifest.xml
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/CameraActivity.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/CameraConnectionFragment.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/ClassifierActivity.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/customview/AutoFitTextureView.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/customview/OverlayView.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/customview/RecognitionScoreView.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/customview/ResultsView.java
+MiDaS-master/mobile/android/app/src/main/java/org/tensorflow/lite/examples/classification/LegacyCameraConnectionFragment.java
+MiDaS-master/mobile/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+MiDaS-master/mobile/android/app/src/main/res/drawable/bottom_sheet_bg.xml
+MiDaS-master/mobile/android/app/src/main/res/drawable/ic_baseline_add.xml
+MiDaS-master/mobile/android/app/src/main/res/drawable/ic_baseline_remove.xml
+MiDaS-master/mobile/android/app/src/main/res/drawable/ic_launcher_background.xml
+MiDaS-master/mobile/android/app/src/main/res/drawable/rectangle.xml
+MiDaS-master/mobile/android/app/src/main/res/layout/tfe_ic_activity_camera.xml
+MiDaS-master/mobile/android/app/src/main/res/layout/tfe_ic_camera_connection_fragment.xml
+MiDaS-master/mobile/android/app/src/main/res/layout/tfe_ic_layout_bottom_sheet.xml
+MiDaS-master/mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+MiDaS-master/mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+MiDaS-master/mobile/android/app/src/main/res/values/colors.xml
+MiDaS-master/mobile/android/app/src/main/res/values/dimens.xml
+MiDaS-master/mobile/android/app/src/main/res/values/strings.xml
+MiDaS-master/mobile/android/app/src/main/res/values/styles.xml
+MiDaS-master/mobile/android/build.gradle
+MiDaS-master/mobile/android/EXPLORE_THE_CODE.md
+MiDaS-master/mobile/android/gradle.properties
+MiDaS-master/mobile/android/gradle/wrapper/gradle-wrapper.jar
+MiDaS-master/mobile/android/gradle/wrapper/gradle-wrapper.properties
+MiDaS-master/mobile/android/gradlew
+MiDaS-master/mobile/android/gradlew.bat
+MiDaS-master/mobile/android/lib_support/build.gradle
+MiDaS-master/mobile/android/lib_support/proguard-rules.pro
+MiDaS-master/mobile/android/lib_support/src/main/AndroidManifest.xml
+MiDaS-master/mobile/android/lib_support/src/main/java/org/tensorflow/lite/examples/classification/tflite/Classifier.java
+MiDaS-master/mobile/android/lib_support/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatEfficientNet.java
+MiDaS-master/mobile/android/lib_support/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatMobileNet.java
+MiDaS-master/mobile/android/lib_support/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedEfficientNet.java
+MiDaS-master/mobile/android/lib_support/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedMobileNet.java
+MiDaS-master/mobile/android/lib_task_api/build.gradle
+MiDaS-master/mobile/android/lib_task_api/proguard-rules.pro
+MiDaS-master/mobile/android/lib_task_api/src/main/AndroidManifest.xml
+MiDaS-master/mobile/android/lib_task_api/src/main/java/org/tensorflow/lite/examples/classification/tflite/Classifier.java
+MiDaS-master/mobile/android/lib_task_api/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatEfficientNet.java
+MiDaS-master/mobile/android/lib_task_api/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatMobileNet.java
+MiDaS-master/mobile/android/lib_task_api/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedEfficientNet.java
+MiDaS-master/mobile/android/lib_task_api/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedMobileNet.java
+MiDaS-master/mobile/android/LICENSE
+MiDaS-master/mobile/android/models/build.gradle
+MiDaS-master/mobile/android/models/download.gradle
+MiDaS-master/mobile/android/models/proguard-rules.pro
+MiDaS-master/mobile/android/models/src/main/AndroidManifest.xml
+MiDaS-master/mobile/android/models/src/main/assets/labels.txt
+MiDaS-master/mobile/android/models/src/main/assets/labels_without_background.txt
+MiDaS-master/mobile/android/models/src/main/assets/run_tflite.py
+MiDaS-master/mobile/android/README.md
+MiDaS-master/mobile/android/settings.gradle
+MiDaS-master/mobile/ios/LICENSE
+MiDaS-master/mobile/ios/Midas.xcodeproj/project.pbxproj
+MiDaS-master/mobile/ios/Midas.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+MiDaS-master/mobile/ios/Midas.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+MiDaS-master/mobile/ios/Midas.xcodeproj/project.xcworkspace/xcuserdata/admin.xcuserdatad/UserInterfaceState.xcuserstate
+MiDaS-master/mobile/ios/Midas.xcodeproj/xcuserdata/admin.xcuserdatad/xcschemes/xcschememanagement.plist
+MiDaS-master/mobile/ios/Midas/AppDelegate.swift
+MiDaS-master/mobile/ios/Midas/Assets.xcassets/AppIcon.appiconset/Contents.json
+MiDaS-master/mobile/ios/Midas/Assets.xcassets/Contents.json
+MiDaS-master/mobile/ios/Midas/Camera Feed/CameraFeedManager.swift
+MiDaS-master/mobile/ios/Midas/Camera Feed/PreviewView.swift
+MiDaS-master/mobile/ios/Midas/Cells/InfoCell.swift
+MiDaS-master/mobile/ios/Midas/Constants.swift
+MiDaS-master/mobile/ios/Midas/Extensions/CGSizeExtension.swift
+MiDaS-master/mobile/ios/Midas/Extensions/CVPixelBufferExtension.swift
+MiDaS-master/mobile/ios/Midas/Extensions/TFLiteExtension.swift
+MiDaS-master/mobile/ios/Midas/Info.plist
+MiDaS-master/mobile/ios/Midas/ModelDataHandler/ModelDataHandler.swift
+MiDaS-master/mobile/ios/Midas/Storyboards/Base.lproj/Launch Screen.storyboard
+MiDaS-master/mobile/ios/Midas/Storyboards/Base.lproj/Main.storyboard
+MiDaS-master/mobile/ios/Midas/ViewControllers/ViewController.swift
+MiDaS-master/mobile/ios/Midas/Views/OverlayView.swift
+MiDaS-master/mobile/ios/Podfile
+MiDaS-master/mobile/ios/README.md
+MiDaS-master/mobile/ios/RunScripts/download_models.sh
+MiDaS-master/mobile/README.md
+MiDaS-master/output/.placeholder
+MiDaS-master/README.md
+MiDaS-master/ros/additions/do_catkin_make.sh
+MiDaS-master/ros/additions/downloads.sh
+MiDaS-master/ros/additions/install_ros_melodic_ubuntu_17_18.sh
+MiDaS-master/ros/additions/install_ros_noetic_ubuntu_20.sh
+MiDaS-master/ros/additions/make_package_cpp.sh
+MiDaS-master/ros/launch_midas_cpp.sh
+MiDaS-master/ros/LICENSE
+MiDaS-master/ros/midas_cpp/CMakeLists.txt
+MiDaS-master/ros/midas_cpp/launch/midas_cpp.launch
+MiDaS-master/ros/midas_cpp/launch/midas_talker_listener.launch
+MiDaS-master/ros/midas_cpp/package.xml
+MiDaS-master/ros/midas_cpp/scripts/listener.py
+MiDaS-master/ros/midas_cpp/scripts/listener_original.py
+MiDaS-master/ros/midas_cpp/scripts/talker.py
+MiDaS-master/ros/midas_cpp/src/main.cpp
+MiDaS-master/ros/README.md
+MiDaS-master/ros/run_talker_listener_test.sh
+MiDaS-master/run.py
+MiDaS-master/tf/input/.placeholder
+MiDaS-master/tf/make_onnx_model.py
+MiDaS-master/tf/output/.placeholder
+MiDaS-master/tf/README.md
+MiDaS-master/tf/run_onnx.py
+MiDaS-master/tf/run_pb.py
+MiDaS-master/tf/transforms.py
+MiDaS-master/tf/utils.py
+MiDaS-master/utils.py
+MiDaS-master/weights/.DS_Store
+MiDaS-master/weights/.placeholder
+midashelp/.DS_Store
+midashelp/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+midashelp/dpt_beit_base_384.pt
+midashelp/Input/IMG_0045.HEIC
+midashelp/Input/output.png
+midashelp/run.py
+midashelp/Untitled.ipynb
