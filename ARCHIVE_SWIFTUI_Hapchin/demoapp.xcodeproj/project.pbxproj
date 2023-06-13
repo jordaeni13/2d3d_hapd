@@ -97,18 +97,18 @@
 			isa = PBXGroup;
 			children = (
 				85C0D2442A06685B009E8F66 /* demoapp */,
-				85C0D2432A06685B009E8F66 /* Products */,
+				85C0D2432A06685B009E8F66 /* demoapp */,
 				178A5A0336D2F95122B02C03 /* Pods */,
 				524563E80F594F3A8F9F422C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		85C0D2432A06685B009E8F66 /* Products */ = {
+		85C0D2432A06685B009E8F66 /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
 				85C0D2422A06685B009E8F66 /* demoapp.app */,
 			);
-			name = Products;
+			name = demoapp;
 			sourceTree = "<group>";
 		};
 		85C0D2442A06685B009E8F66 /* demoapp */ = {
@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "HapD" */;
+			buildConfigurationList = 85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "demoapp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,7 +181,7 @@
 				Base,
 			);
 			mainGroup = 85C0D2392A06685B009E8F66;
-			productRefGroup = 85C0D2432A06685B009E8F66 /* Products */;
+			productRefGroup = 85C0D2432A06685B009E8F66 /* demoapp */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -447,7 +447,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "HapD" */ = {
+		85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "demoapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85C0D24E2A06685D009E8F66 /* Debug */,

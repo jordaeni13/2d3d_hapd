@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/ironbae/Documents/iosapp/2d3d_hapd/ARCHIVE_SWIFTUI_Hapchin/HapD.xcodeproj">
+      location = "group:/Users/ironbae/Documents/iosapp/2d3d_hapd/ARCHIVE_SWIFTUI_Hapchin/demoapp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
