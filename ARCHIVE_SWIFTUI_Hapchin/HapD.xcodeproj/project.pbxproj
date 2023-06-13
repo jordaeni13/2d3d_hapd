@@ -172,7 +172,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "demoapp" */;
+			buildConfigurationList = 85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "HapD" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -377,8 +377,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = demoapp/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires your devices' camera for storing the picture as monocular depth picture you want to display on the app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to your device's photo library for fetching monocular depth picture you want to display on the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,8 +417,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = demoapp/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires your devices' camera for storing the picture as monocular depth picture you want to display on the app";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to your device's photo library for fetching monocular depth picture you want to display on the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,7 +445,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "demoapp" */ = {
+		85C0D23D2A06685B009E8F66 /* Build configuration list for PBXProject "HapD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85C0D24E2A06685D009E8F66 /* Debug */,
