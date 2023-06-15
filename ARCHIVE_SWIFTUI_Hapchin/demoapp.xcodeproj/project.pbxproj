@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5808BD212A39972D000681E7 /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5808BD202A39972D000681E7 /* Camera-SwiftUI */; };
+		5825F86E2A398C9B0097ED9E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5825F8672A398C9B0097ED9E /* CameraView.swift */; };
 		58B14B652A25ABAB00451325 /* MiDaSHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B5F2A25ABAB00451325 /* MiDaSHandler.swift */; };
 		58B14B662A25ABAB00451325 /* model_opt.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 58B14B602A25ABAB00451325 /* model_opt.tflite */; };
 		58B14B672A25ABAB00451325 /* demoappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B612A25ABAB00451325 /* demoappApp.swift */; };
@@ -15,9 +17,7 @@
 		58B14B7D2A25B03100451325 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B7A2A25B03100451325 /* CGSizeExtension.swift */; };
 		58B14B7E2A25B03100451325 /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B7B2A25B03100451325 /* CVPixelBufferExtension.swift */; };
 		58B14B7F2A25B03100451325 /* TFLiteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B14B7C2A25B03100451325 /* TFLiteExtension.swift */; };
-		854C374B2A06739C00B2DAEB /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C374A2A06739C00B2DAEB /* CameraView.swift */; };
-		854C374D2A0673CB00B2DAEB /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C374C2A0673CB00B2DAEB /* GalleryView.swift */; };
-		85C0D2482A06685B009E8F66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C0D2472A06685B009E8F66 /* ContentView.swift */; };
+		854C374D2A0673CB00B2DAEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854C374C2A0673CB00B2DAEB /* ContentView.swift */; };
 		85C0D24A2A06685D009E8F66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C0D2492A06685D009E8F66 /* Assets.xcassets */; };
 		85C0D24D2A06685D009E8F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C0D24C2A06685D009E8F66 /* Preview Assets.xcassets */; };
 		E2158FB2CA3F0BED2210E036 /* Pods_demoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF50AED8DE9BE3A150A5FE34 /* Pods_demoapp.framework */; };
@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		5081535658014AD5CA96BA1C /* Pods-demoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoapp.release.xcconfig"; path = "Target Support Files/Pods-demoapp/Pods-demoapp.release.xcconfig"; sourceTree = "<group>"; };
+		5825F8672A398C9B0097ED9E /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "../../../../../../Downloads/SwiftCamera-main 3/SwiftCamera/CameraView.swift"; sourceTree = "<group>"; };
 		58B14B5F2A25ABAB00451325 /* MiDaSHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiDaSHandler.swift; sourceTree = "<group>"; };
 		58B14B602A25ABAB00451325 /* model_opt.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_opt.tflite; sourceTree = "<group>"; };
 		58B14B612A25ABAB00451325 /* demoappApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demoappApp.swift; sourceTree = "<group>"; };
@@ -34,10 +35,8 @@
 		58B14B7B2A25B03100451325 /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
 		58B14B7C2A25B03100451325 /* TFLiteExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLiteExtension.swift; sourceTree = "<group>"; };
 		851125B82A2247320012966B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		854C374A2A06739C00B2DAEB /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		854C374C2A0673CB00B2DAEB /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		854C374C2A0673CB00B2DAEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		85C0D2422A06685B009E8F66 /* demoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		85C0D2472A06685B009E8F66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		85C0D2492A06685D009E8F66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85C0D24C2A06685D009E8F66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF50AED8DE9BE3A150A5FE34 /* Pods_demoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2158FB2CA3F0BED2210E036 /* Pods_demoapp.framework in Frameworks */,
+				5808BD212A39972D000681E7 /* Camera-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,9 +86,8 @@
 		854C37492A06737C00B2DAEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				85C0D2472A06685B009E8F66 /* ContentView.swift */,
-				854C374A2A06739C00B2DAEB /* CameraView.swift */,
-				854C374C2A0673CB00B2DAEB /* GalleryView.swift */,
+				5825F8672A398C9B0097ED9E /* CameraView.swift */,
+				854C374C2A0673CB00B2DAEB /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +152,9 @@
 			dependencies = (
 			);
 			name = demoapp;
+			packageProductDependencies = (
+				5808BD202A39972D000681E7 /* Camera-SwiftUI */,
+			);
 			productName = demoapp;
 			productReference = 85C0D2422A06685B009E8F66 /* demoapp.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 85C0D2392A06685B009E8F66;
+			packageReferences = (
+				5808BD1F2A39972D000681E7 /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */,
+			);
 			productRefGroup = 85C0D2432A06685B009E8F66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,14 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				854C374B2A06739C00B2DAEB /* CameraView.swift in Sources */,
 				58B14B7E2A25B03100451325 /* CVPixelBufferExtension.swift in Sources */,
-				85C0D2482A06685B009E8F66 /* ContentView.swift in Sources */,
 				58B14B7F2A25B03100451325 /* TFLiteExtension.swift in Sources */,
 				58B14B7D2A25B03100451325 /* CGSizeExtension.swift in Sources */,
 				58B14B672A25ABAB00451325 /* demoappApp.swift in Sources */,
 				58B14B682A25ABAB00451325 /* Constants.swift in Sources */,
-				854C374D2A0673CB00B2DAEB /* GalleryView.swift in Sources */,
+				854C374D2A0673CB00B2DAEB /* ContentView.swift in Sources */,
+				5825F86E2A398C9B0097ED9E /* CameraView.swift in Sources */,
 				58B14B652A25ABAB00451325 /* MiDaSHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5808BD1F2A39972D000681E7 /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rorodriguez116/Camera-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5808BD202A39972D000681E7 /* Camera-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5808BD1F2A39972D000681E7 /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */;
+			productName = "Camera-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 85C0D23A2A06685B009E8F66 /* Project object */;
 }
