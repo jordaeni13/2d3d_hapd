@@ -1,8 +1,12 @@
-
-import SwiftUI
 import CoreHaptics
 import PhotosUI
-
+import SwiftUI
+struct EmptyView: View {
+    var body: some View {
+        VStack{}
+    }
+    
+}
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     @GestureState private var dragLocation: CGPoint = .zero
@@ -13,12 +17,15 @@ struct ContentView: View {
     @State private var selectedImageData: Data? = nil
     @State private var showSelectPhotoText = true
     
+    @State private var feedback = UINotificationFeedbackGenerator()
+    
     var body: some View {
         NavigationView {
             VStack {
                 ZStack {
                     if let selectedImageData,
-                       let uiImage = UIImage(data: selectedImageData) {
+                       let uiImage = UIImage(data: selectedImageData)
+                    {
                         GeometryReader { geometry in
                             Image(uiImage: uiImage)
                                 .resizable()
@@ -33,7 +40,7 @@ struct ContentView: View {
                                 .gesture(DragGesture()
                                     .updating($dragLocation) { value, state, _ in
                                         state = value.location
-                                        updateColorRGB(state: state, imageFrame: geometry.frame(in: .global))
+                                        giveFeedback(state: state, imageFrame: geometry.frame(in: .global))
                                     }
                                 )
                         }
@@ -56,24 +63,24 @@ struct ContentView: View {
                                             .font(.title)
                                             .foregroundColor(.white)
                                     
-                                                } else {
-                                                    Image(systemName: "photo")
-                                                        .font(.title)
-                                                        .foregroundColor(.black)
-                                                        
-                                                }
+                                    } else {
+                                        Image(systemName: "photo")
+                                            .font(.title)
+                                            .foregroundColor(.black)
+                                    }
                                 }
                                 .onChange(of: selectedItem) { newItem in
                                     Task {
                                         // Retrieve selected asset in the form of Data
                                         if let data = try? await newItem?.loadTransferable(type: Data.self) {
-                                            selectedImageData = data
+                                            let imaage = getMidasImage(on: UIImage(data: data)!)
+                                            selectedImageData = imaage.pngData()
                                         }
                                     }
                                 }
                             }
                             Spacer()
-                            Text("Intensity: \(pow((Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3), 2))")
+                            Text("Intensity: \(pow(Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3, 2))")
                                 .padding()
                             
                             Spacer()
@@ -86,33 +93,50 @@ struct ContentView: View {
                                         
                                         .padding(.trailing)
                                 
-                                        } else {
-                                                Image(systemName: "camera")
-                                                    .font(.title)
-                                                    .foregroundColor(.black)
+                                } else {
+                                    Image(systemName: "camera")
+                                        .font(.title)
+                                        .foregroundColor(.black)
                                                     
-                                                    .padding(.trailing)
-                                                    
-                                            }
+                                        .padding(.trailing)
+                                }
                             }
                         }
-                       
                     }
                     .padding()
-                    
-                    
                 }
                 .padding(.bottom)
-                .navigationBarTitle("HapD")
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        VStack {
+                            Spacer()
+                            HStack {
+                                Text("HapD")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.black)
+                                    .fontWeight(.bold)
+                                
+                                    .padding(.vertical,10)
+                                    .padding(.horizontal,20)
+                                    .background(Color.white)
+                                    .clipShape(Capsule())
+                                Spacer()
+                            }
+                        }
+                            }
+                        }
                 
+             
                 
+                    
             }
+            
             .ignoresSafeArea()
         }
+        
     }
-
     
-    private func updateColorRGB(state: CGPoint, imageFrame: CGRect) {
+    private func giveFeedback(state: CGPoint, imageFrame: CGRect) {
         DispatchQueue.main.async {
             let convertedPoint = convertToImageCoordinates(point: state, imageFrame: imageFrame)
             colorRGB = rgbValue(of: convertedPoint)
@@ -122,7 +146,6 @@ struct ContentView: View {
             hapticManager.playHaptic(intensity: intensity)
         }
     }
-
     private func convertToImageCoordinates(point: CGPoint, imageFrame: CGRect) -> CGPoint {
         guard let imageData = selectedImageData, let image = UIImage(data: imageData) else {
             return .zero
@@ -143,11 +166,11 @@ struct ContentView: View {
         let imageY = (point.y - (imageFrame.size.height - imageSize.height) / 2) / imageScale
         return CGPoint(x: imageX, y: imageY)
     }
-
     private func rgbValue(of point: CGPoint) -> (red: CGFloat, green: CGFloat, blue: CGFloat) {
         guard let imageData = selectedImageData, let image = UIImage(data: imageData) else {
-            return (0,0,0)
+            return (0, 0, 0)
         }
+      
         // Use the 'image' variable here, which is a non-optional UIImage
         let imageX = point.x
         let imageY = point.y
@@ -169,10 +192,7 @@ struct ContentView: View {
         return (red, green, blue)
     }
 }
-
-
-
-// HapticManager implementation goes here...
+// HapticManager implementation goes here…
 class HapticManager {
     private var engine: CHHapticEngine?
     private var isEngineRunning = false
@@ -205,7 +225,7 @@ class HapticManager {
         let intensityParameter = CHHapticEventParameter(parameterID: .hapticIntensity, value: pow(intensity, 2))
         let sharpnessParameter = CHHapticEventParameter(parameterID: .hapticSharpness, value: pow(intensity, 2))
         
-        let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensityParameter, sharpnessParameter], relativeTime: 0, duration: 0.01)
+        let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensityParameter, sharpnessParameter], relativeTime: 0, duration: 0.05)
         let pattern = try? CHHapticPattern(events: [event], parameters: [])
         
         // Play the haptic pattern
