@@ -80,7 +80,7 @@ struct ContentView: View {
                                 }
                             }
                             Spacer()
-                            Text("Intensity: \(pow(Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3, 2))")
+                            Text("Intensity: \( log10( 9 * (Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3) + 1 ) )")
                                 .padding()
                             
                             Spacer()
@@ -141,7 +141,7 @@ struct ContentView: View {
             let convertedPoint = convertToImageCoordinates(point: state, imageFrame: imageFrame)
             colorRGB = rgbValue(of: convertedPoint)
             // Calculate intensity based on the RGB value
-            let intensity = Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3
+            let intensity = log10( 9 * (Float(colorRGB.red + colorRGB.green + colorRGB.blue) / 3) + 1 )
             // Play haptic feedback
             hapticManager.playHaptic(intensity: intensity)
         }
